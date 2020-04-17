@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="889.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserInterfaceController">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="540.0" prefWidth="889.0" style="-fx-background-color: #fff;">
+         <left>
+            <Pane prefHeight="430.0" prefWidth="206.0" styleClass="linear-grad" stylesheets="@../CSS/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/synergyblanc.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </left>
+         <center>
+            <StackPane fx:id="pnlStack" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane fx:id="pnlUser" prefHeight="514.0" prefWidth="656.0" stylesheets="@../CSS/style.css">
+                     <children>
+                        <TableView fx:id="tableUser" layoutX="8.0" layoutY="78.0" prefHeight="436.0" prefWidth="673.0" stylesheets="@../CSS/style.css">
+                          <columns>
+                            <TableColumn fx:id="IdCol" prefWidth="32.0" text="Id" />
+                            <TableColumn fx:id="pseudoCol" prefWidth="74.0" text="Pseudo" />
+                              <TableColumn fx:id="prenomCol" prefWidth="103.0" text="Nom Complet" />
+                              <TableColumn fx:id="dateCol" prefWidth="116.0" text="Date de Naissance" />
+                              <TableColumn fx:id="roleCol" prefWidth="62.0" text="Role" />
+                              <TableColumn fx:id="emailCol" prefWidth="104.0" text="Email" />
+                              <TableColumn fx:id="adrCol" prefWidth="93.0" text="Adresse" />
+                              <TableColumn fx:id="telCol" minWidth="0.0" prefWidth="28.0" text="Tel" />
+                          </columns>
+                        </TableView>
+                        <Text fill="#558cda" layoutX="15.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Nunito; -fx-font-weight: bold;" text="Gestion des Employees" wrappingWidth="148.5286407470703" />
+                        <Button fx:id="addScreen" layoutX="15.0" layoutY="30.0" mnemonicParsing="false" onAction="#AddScreenAction" style="-fx-background-color: #1CC88A; -fx-font-weight: bold;" text="Ajouter">
+                        </Button>
+                        <Button fx:id="modifyBtn" layoutX="100.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #F6C23E; -fx-font-weight: bold;" text="Modifier">
+                        </Button>
+                        <Button fx:id="deleteBtn" layoutX="188.0" layoutY="30.0" mnemonicParsing="false" style="-fx-background-color: #E74A3B; -fx-font-weight: bold;" text="Supprimer">
+                        </Button>
+                        <TextField fx:id="flSearch" layoutX="373.0" layoutY="29.0" prefHeight="36.0" prefWidth="152.0" promptText="Search" styleClass="TextInputControl" stylesheets="@../CSS/style.css" />
+                        <Button layoutX="279.0" layoutY="31.0" minWidth="34.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="34.0" styleClass="setStyle" stylesheets="@../CSS/style.css"/>
+                     </children>
+                  </Pane>
+               </children>
+            </StackPane>
+         </center>
+         <top>
+            <HBox alignment="TOP_RIGHT" prefHeight="15.0" prefWidth="883.0" spacing="5.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fill="#27c941" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fill="#fdbb2d" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                  <Circle fx:id="btnClose" fill="#fc5d57" onMouseClicked="#handleMouseEvent" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+               </children>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
