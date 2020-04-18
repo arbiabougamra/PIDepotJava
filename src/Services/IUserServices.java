@@ -5,7 +5,7 @@
  */
 package Services;
 
-import Entites.User;
+import Entity.User;
 import java.util.List;
 
 /**
