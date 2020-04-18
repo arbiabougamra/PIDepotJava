@@ -5,7 +5,7 @@
  */
 package Controllers;
 
-import Entites.User;
+import Entity.User;
 import Services.UserServices;
 import animatefx.animation.FadeOut;
 import animatefx.animation.ZoomIn;

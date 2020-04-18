@@ -28,7 +28,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import Entites.User;
+import Entity.User;
 
 /**
  * FXML Controller class

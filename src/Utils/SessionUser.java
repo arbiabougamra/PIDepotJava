@@ -5,7 +5,7 @@
  */
 package Utils;
 
-import Entites.User;
+import Entity.User;
 import Services.UserServices;
 
 /**

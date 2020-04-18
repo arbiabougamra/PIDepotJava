@@ -22,7 +22,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Circle;
 import animatefx.animation.*;
 import javafx.scene.layout.AnchorPane;
-import Entites.User;
+import Entity.User;
 import Services.UserServices;
 import Utils.DataSource;
 import Utils.SessionUser;
