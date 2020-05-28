@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PromotionInterfaceController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="root" layoutX="10.0" prefHeight="532.0" prefWidth="627.0">
+         <children>
+            <VBox layoutX="-47.0" prefHeight="645.0" prefWidth="235.0" style="-fx-background-color: #559AFF;">
+               <children>
+                  <Pane prefHeight="456.0" prefWidth="230.0">
+                     <children>
+                        <ImageView fx:id="logo" fitHeight="126.0" fitWidth="141.0" layoutX="57.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/images/LOGO1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <Pane layoutX="160.0" layoutY="48.0" prefHeight="633.0" prefWidth="808.0">
+               <children>
+                  <TableView fx:id="Table_Promo" layoutX="41.0" layoutY="77.0" prefHeight="519.0" prefWidth="681.0" styleClass="tak-btn">
+                     <columns>
+                        <TableColumn fx:id="valeur_col" prefWidth="209.0" text="Valeur" />
+                        <TableColumn fx:id="prod_col" prefWidth="242.0" text="Produit" />
+                        <TableColumn fx:id="datef_col" prefWidth="229.0" text="Date Fin" />
+                     </columns>
+                  </TableView>
+                  <JFXButton fx:id="delete_btn" alignment="BASELINE_RIGHT" buttonType="RAISED" layoutX="46.0" layoutY="33.0" onAction="#DeletePromotion" prefHeight="32.0" prefWidth="78.0" style="-fx-background-color: F65656;" text="Delete">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="48.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/images/delete.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fx:id="ImageView" fitHeight="1.0" fitWidth="156.0" layoutX="-3.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="199.0" layoutY="13.0" prefHeight="53.0" prefWidth="253.0" text="Gestion Promotion" textFill="#000000b5" textOverrun="LEADING_ELLIPSIS">
+               <font>
+                  <Font name="Microsoft JhengHei Bold" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

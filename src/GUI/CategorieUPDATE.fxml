@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="414.0" prefWidth="555.0" style="-fx-background-color: linear-gradient(to right top,#0066ff,#66ffff);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CategorieUPDATEController">
+     <children>
+      
+      
+      <JFXButton fx:id="cancel_btn" layoutX="316.0" layoutY="273.0" onAction="#CloseStageAutomaticly" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #E74A3B;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Cancel" />
+      <JFXButton fx:id="confirm_btn" layoutX="178.0" layoutY="273.0" onAction="#UpdateCategorie" prefHeight="31.0" prefWidth="96.0" style="-fx-background-color: #1CC88A;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Confirm" />
+      <JFXTextField fx:id="id_tf" disable="true" editable="false" layoutX="555.0" layoutY="14.0" prefHeight="25.0" prefWidth="22.0" visible="false" />
+      <ImageView fx:id="imgview" fitHeight="103.0" fitWidth="104.0" layoutX="449.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="45.0" layoutY="167.0" prefHeight="30.0" prefWidth="63.0" style="-fx-text-fill: #ccffff;" text="Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nom_tf" layoutX="166.0" layoutY="166.0" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="166.0" layoutY="45.0" prefHeight="45.0" prefWidth="269.0" style="-fx-text-fill: #ccffff;" text="Category UPDATE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

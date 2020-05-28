@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="759.0" prefWidth="1392.0" style="-fx-background-color: linear-gradient(to bottom, #ffffff 0%, #3399ff 104%);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PageClientController">
+   <children>
+      <HBox layoutX="438.0" layoutY="100.0" prefHeight="75.0" prefWidth="516.0">
+         <children>
+            <HBox onMouseClicked="#ProduitClient" prefHeight="12.0" prefWidth="149.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="166.0" text="Produit">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="188.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="131.0" text="Reclamation">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="108.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="173.0" text="Panier">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="75.0" prefWidth="118.0">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="104.0" text="Livrasion">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <VBox fx:id="content_area" layoutX="197.0" layoutY="158.0" prefHeight="564.0" prefWidth="1055.0">
+         <children>
+            <BorderPane fx:id="contents" prefHeight="560.0" prefWidth="900.0" />
+         </children>
+      </VBox>
+      <ImageView fitHeight="153.0" fitWidth="173.0" layoutX="20.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/images/LOGO1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

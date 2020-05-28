@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1342.0" stylesheets="@../CascadingSteelsSheets/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ContentAreaController">
+   <children>
+      <VBox fx:id="sidebar" alignment="TOP_CENTER" layoutX="-16.0" layoutY="10.0" prefHeight="737.0" prefWidth="256.0" spacing="50.0" styleClass="sidebar" stylesheets="@../CascadingSteelsSheets/stylesheet.css">
+         <children>
+            <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="183.0" text="Main" textFill="#b8b1b1">
+               <font>
+                  <Font name="Calibri Bold" size="23.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" styleClass="sidebar-btn">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <Label fx:id="idStock" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Stock" prefHeight="49.0" prefWidth="178.0" text="Gestion Stock" textFill="#b8b1b1">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="idMg" alignment="CENTER_LEFT" layoutX="10.0" layoutY="162.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Magasin" prefHeight="40.0" prefWidth="250.0" styleClass="sidebar-btn">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <Label text="Gestoin Magasin" textFill="#b8b1b1">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="idCategorie" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Catégorie" prefHeight="40.0" prefWidth="250.0" styleClass="sidebar-btn">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <Label text="Gestion Catégorie" textFill="#b8b1b1">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox fx:id="idPromo" alignment="CENTER_LEFT" layoutX="10.0" layoutY="197.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Promo" prefHeight="40.0" prefWidth="250.0" styleClass="sidebar-btn">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <Label text="List Promotion" textFill="#b8b1b1">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" styleClass="sidebar-btn">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <Label text="Gestion Livraison" textFill="#b8b1b1">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" styleClass="sidebar-btn">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <children>
+                  <Label text="Gestion User" textFill="#b8b1b1">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+      <VBox fx:id="content_area" layoutX="278.0" layoutY="7.0" onMouseClicked="#Promo" prefHeight="690.0" prefWidth="1011.0" stylesheets="@../CascadingSteelsSheets/stylesheet.css">
+    <children>
+            <BorderPane fx:id="contents" prefHeight="633.0" prefWidth="800.0" />
+    </children>
+</VBox>
+
+   </children>
+</AnchorPane>

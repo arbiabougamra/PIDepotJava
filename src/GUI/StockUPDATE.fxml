@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="627.0" prefWidth="600.0" style="-fx-background-color: #EFF0F3;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StockUPDATEController">
+   <children>
+      <Label layoutX="42.0" layoutY="275.0" prefHeight="25.0" prefWidth="89.0" text="Date début">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="160.0" prefHeight="25.0" prefWidth="74.0" text="Quantite">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="116.0" prefHeight="25.0" prefWidth="65.0" text="Marque">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="72.0" prefHeight="17.0" prefWidth="51.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datep1_tf" layoutX="190.0" layoutY="274.0" />
+      <JFXTextField fx:id="quantite_tf" layoutX="128.0" layoutY="154.0" prefHeight="31.0" prefWidth="366.0" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="marque_tf" layoutX="128.0" layoutY="103.0" prefHeight="25.0" prefWidth="366.0" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="nom_tf" layoutX="128.0" layoutY="59.0" prefHeight="25.0" prefWidth="366.0" style="-fx-background-color: #ffffff;" />
+      <JFXButton fx:id="Browse_btn" layoutX="31.0" layoutY="418.0" onAction="#browse" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #0D8BE7;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Browse Pic" />
+      <JFXTextField fx:id="pic_tf" layoutX="125.0" layoutY="419.0" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: #ffffff;" />
+      <JFXButton fx:id="cancel_btn" layoutX="341.0" layoutY="499.0" onAction="#CloseStageAutomaticly" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #E74A3B;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Cancel" />
+      <JFXButton fx:id="confirm_btn" layoutX="116.0" layoutY="500.0" onAction="#UpdateStock" prefHeight="25.0" prefWidth="160.0" style="-fx-background-color: #1CC88A;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Confirm" />
+      <Label layoutX="42.0" layoutY="339.0" prefHeight="25.0" prefWidth="89.0" text="Date fin">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="160.0" prefHeight="25.0" prefWidth="74.0" text="Quantite">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="116.0" prefHeight="25.0" prefWidth="65.0" text="Marque">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="72.0" prefHeight="17.0" prefWidth="51.0" text="Nom">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datep2_tf" layoutX="190.0" layoutY="338.0" />
+      <JFXTextField fx:id="id_tf" disable="true" editable="false" layoutX="555.0" layoutY="14.0" prefHeight="25.0" prefWidth="22.0" visible="false" />
+      <ImageView fx:id="imgview" fitHeight="103.0" fitWidth="104.0" layoutX="449.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="42.0" layoutY="218.0" text="Prix">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="prix_tf" layoutX="128.0" layoutY="210.0" prefHeight="31.0" prefWidth="366.0" style="-fx-background-color: #ffffff;" />
+   </children>
+</AnchorPane>

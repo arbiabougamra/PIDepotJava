@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="509.0" style="-fx-background-color: linear-gradient(to right top,#0066ff,#66ffff);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AffecterMgInterfaceController">
+   <children>
+      <JFXTextField fx:id="prix_mg" layoutX="152.0" layoutY="122.0" prefHeight="28.0" prefWidth="206.0" style="-fx-background-color: #ffffff;" unFocusColor="#4d4d4d00" />
+      <JFXTextField fx:id="quantite_mg" layoutX="152.0" layoutY="203.0" prefHeight="28.0" prefWidth="206.0" style="-fx-background-color: #ffffff;" unFocusColor="#4d4d4d2f" />
+      <Label layoutX="40.0" layoutY="123.0" prefHeight="25.0" prefWidth="64.0" style="-fx-text-fill: #ccffff;" text="Prix">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="206.0" prefHeight="28.0" prefWidth="90.0" style="-fx-text-fill: #ccffff;" text="Quantite">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="confirm_btn" layoutX="152.0" layoutY="282.0" onAction="#AffecterMg" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #1CC88A;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Confirm" />
+      <JFXButton fx:id="cancel_btn" layoutX="268.0" layoutY="282.0" onAction="#CloseStageAutomaticly" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #E74A3B;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Cancel" />
+      <Label layoutX="142.0" layoutY="29.0" prefHeight="45.0" prefWidth="269.0" style="-fx-text-fill: #ccffff;" text="Produit Magasin ">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

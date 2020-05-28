@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="672.0" style="-fx-background-color: linear-gradient(to right top,#0066ff,#66ffff);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ADDPromotionInterfaceController">
+   <children>
+      <ComboBox fx:id="produit_field_box" layoutX="220.0" layoutY="217.0" prefHeight="31.0" prefWidth="231.0" />
+      <DatePicker fx:id="datef_promo" layoutX="220.0" layoutY="300.0" prefHeight="31.0" prefWidth="231.0" />
+      <JFXButton fx:id="confirm_btn" layoutX="204.0" layoutY="388.0"  onAction="#AddPromotion" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #1CC88A;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Confirm" />
+      <JFXButton fx:id="cancel_btn" layoutX="367.0" layoutY="388.0" onAction="#CloseStageAutomaticly" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #E74A3B;" styleClass="btn-login" stylesheets="@../CascadingSteelsSheets/Style.css" text="Cancel" />
+      <JFXTextField fx:id="Valeur_tf" layoutX="220.0" layoutY="135.0" prefHeight="31.0" prefWidth="231.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="201.0" layoutY="41.0" prefHeight="45.0" prefWidth="286.0" style="-fx-text-fill: #ccffff;" text="ADD PROMOTION">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="136.0" prefHeight="30.0" prefWidth="63.0" style="-fx-text-fill: #ccffff;" text="Valeur">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="218.0" prefHeight="30.0" prefWidth="77.0" style="-fx-text-fill: #ccffff;" text="Poduit">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="301.0" prefHeight="30.0" prefWidth="91.0" style="-fx-text-fill: #ccffff;" text="Date Fin ">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

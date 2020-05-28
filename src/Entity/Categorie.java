@@ -14,7 +14,7 @@ import java.util.Objects;
 public class Categorie {
     private int id ; 
     private String nom;
-    
+    public Categorie(){};
     
     public Categorie(int id , String nom){
         this.id=id;
