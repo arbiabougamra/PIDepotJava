@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Entity;
+package Entites;
 
 import java.sql.Timestamp;
 import java.util.Objects;

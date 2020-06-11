@@ -5,50 +5,58 @@
  */
 package bazaar;
 
-import CONNECTION.DataSource;
-import Entity.Categorie;
-import Services.CategorieService;
 
-
-
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+import static javafx.application.Application.launch;
+import animatefx.animation.*;
 
 /**
  *
- * @author PCS
+ * @author Bia
  */
-public class Bazaar {
+public class Bazaar extends Application {
+    
+    private double xOffset = 0;
+    private double yOffset = 0;
+    
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("GUI/LoginInterface.fxml"));
+        
+        Scene scene = new Scene(root);
+        
+           stage.setScene(scene);
+           stage.initStyle(StageStyle.TRANSPARENT);
+        
+        root.setOnMousePressed( (MouseEvent event) -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
+        }) ;
+        
+        root.setOnMouseDragged( (MouseEvent event) -> {
+            stage.setX(event.getScreenX() - xOffset);
+            stage.setY(event.getScreenY() - yOffset);
+
+        });
+        
+        stage.setScene(scene);
+        new FadeIn(root).play();
+        stage.show();
+        
+    }
 
     /**
      * @param args the command line arguments
      */
- 
-   
-public static void main(String[] args)  {
-        DataSource  ds =DataSource.getInstance();
-       Categorie c1=new Categorie("Electronique");
-       Categorie c2=new Categorie("Gaming");
-       Categorie c3 = new Categorie("Porduit laitiers");
-       Categorie c4 = new Categorie("Electromenager");
-       Categorie c5 = new Categorie("jeux");
-       
-       CategorieService cat=new CategorieService();
-      cat.ajouter(c1);
-      cat.ajouter(c2);  
-       cat.ajouter(c3);
-       cat.ajouter(c5);
-       cat.ajouter(c4);
-        
-       
-       
-       
-  //     cat.SupprimerParID(15);
-   //   cat.SupprimerParID(16);
-      System.out.println(cat.getListCategorie());
-    
-     //  System.out.println(cat.getListCategorie());
-       
-       
-     
-        
+    public static void main(String[] args) {
+         launch(args);
     }
+    
 }
+
